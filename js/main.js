@@ -16,7 +16,7 @@ var closeModal = document.getElementById("closeBtnModal")
 
 // this is the apiKey which lets us use the API of openWeather
 // -------------------------------------------
-const apiKey = ''
+const apiKey = '35df0f09cc00c2fffc614dcf6e9b36b0'
 // -------------------------------------------
 // -------------------------------------------
 
@@ -146,3 +146,28 @@ closeModal.onclick = function () {
     myModal.classList.remove("visibleModal")
     weatherDiv.innerHTML = " "
 }
+
+
+
+
+
+automBtn.onclick=function(){
+    getLocation()
+}
+
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+   alert("Geolocation is not supported by this browser.")
+  }
+
+}
+
+function showPosition(position) {
+   console.log(position.coords.latitude)
+   requestApiCoord(position.coords.latitude, position.coords.longitude)
+  }
+
+ 

@@ -28,11 +28,11 @@ header#header-main {
     justify-content: center;
 
     padding-top: 50px;
-    height: 80vh;
+    height: 88vh;
 
     .main-inside {
 
-        border: 1px solid red;
+        // border: 1px solid red;
         position: relative;
         color: white;
         height: 70vh;
@@ -80,16 +80,6 @@ header#header-main {
     }
 }
 
-footer#footer-main {
-    text-align: center;
-    color: white;
-    padding-top: 15px;
-
-    p {
-        font-size: 1em;
-    }
-
-}
 
 #weatherModal {
 
@@ -103,11 +93,14 @@ footer#footer-main {
     border-radius: 10px;
     text-align: center;
     transition: 0.4s ease-in-out;
+    padding: 40px 10px;
     button {
         position: absolute;
         right: 10px;
         top: 15px;
         border: none;
+        font-size: 1.2em;
+        color: red;
         background-color: transparent;
         cursor: pointer;
     }
@@ -119,3 +112,14 @@ footer#footer-main {
       
     }
 }
+footer#footer-main {
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+
+    p {
+        font-size: 1em;
+    }
+
+}
+
