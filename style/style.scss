@@ -37,6 +37,7 @@ header#header-main {
         color: white;
         height: 70vh;
         overflow: hidden;
+
         .myBtn {
             padding: 15px;
             cursor: pointer;
@@ -50,14 +51,17 @@ header#header-main {
             left: -250px;
             text-align: center;
             transition: 0.3s ease-in-out;
-            label{
+
+            label {
                 font-size: 1.5em;
             }
-            input{
+
+            input {
                 padding: 10px;
                 margin: 10px 0;
             }
-            button{
+
+            button {
                 font-size: 1em;
                 padding: 10px;
                 border: none;
@@ -72,7 +76,7 @@ header#header-main {
         }
 
 
-    
+
     }
 }
 
@@ -87,15 +91,31 @@ footer#footer-main {
 
 }
 
-#weatherModal{
+#weatherModal {
 
     position: absolute;
-
-    top: 50%;
-    left: 50%;
-
+    visibility: hidden;
+    opacity: 0;
+    top: 30%;
+    left: -250px;
+    width: 30%;
     background-color: white;
-    border: 1px solid black;
     border-radius: 10px;
-    
+    text-align: center;
+    transition: 0.4s ease-in-out;
+    button {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &.visibleModal {
+        visibility: visible;
+        opacity: 1;
+        left: 35%;
+      
+    }
 }

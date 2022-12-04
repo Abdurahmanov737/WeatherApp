@@ -77,9 +77,26 @@ footer#footer-main p {
 
 #weatherModal {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  visibility: hidden;
+  opacity: 0;
+  top: 30%;
+  left: -250px;
+  width: 30%;
   background-color: white;
-  border: 1px solid black;
   border-radius: 10px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+#weatherModal button {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#weatherModal.visibleModal {
+  visibility: visible;
+  opacity: 1;
+  left: 35%;
 }/*# sourceMappingURL=style.css.map */
