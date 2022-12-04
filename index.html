@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+
+    <!-- header starts here -->
+    <header id="header-main">
+        <p>
+            Weather Forecast App
+        </p>
+    </header>
+    <!-- header ends here -->
+
+    <div class="weather-main">
+
+
+
+        <div class="main-inside">
+
+            <!-- <label for="selections">Choose a way:</label>
+            <br>
+            <select name="selections" id="selections">
+
+                <option value="" selected></option>
+                <option value="city">By city name</option>
+                <option value="longs">By longitude and latitude</option>
+                <option value="automat">Automatically</option>
+            </select> -->
+
+
+            <button class="myBtn" id="city">
+                Find by City Name
+            </button>
+
+            <button class="myBtn" id="coord">
+                Find by Coordinates
+            </button>
+
+            <button class="myBtn" id="autom">
+                Find Automatically
+            </button>
+
+
+            <div id="main-city" class="unv visibles">
+                <label for="cityInp" >Enter the City Name:</label>
+                <br>
+                <input type="text" id="cityInp" placeholder="City">
+                <br>
+                <button id="citySubmit">Submit</button>
+            </div>
+
+            <div id="main-coord">
+                <label for="coordInp">Enter the Coordinates:</label>
+                <br>
+                <input type="text" placeholder="Latitude" id="latInp">
+                <br>
+                <input type="text" placeholder="Longitude" id="longInp">
+                <br>
+                <button id="coordSubmit"> Submit </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer starts here -->
+    <footer id="footer-main">
+        <p>
+            Copyright &#169 2022
+        </p>
+    </footer>
+    <!-- footer ends here -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

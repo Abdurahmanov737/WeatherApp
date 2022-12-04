@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(10, 10, 170);
+}
+
+header#header-main {
+  text-align: center;
+  color: white;
+  padding-top: 15px;
+}
+header#header-main p {
+  font-size: 2em;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  height: 80vh;
+}
+.weather-main .main-inside {
+  border: 1px solid red;
+  position: relative;
+  color: white;
+  height: 70vh;
+  overflow: hidden;
+}
+.weather-main .main-inside .myBtn {
+  padding: 15px;
+}
+.weather-main .main-inside #main-city,
+.weather-main .main-inside #main-coord {
+  position: absolute;
+  top: 30%;
+  left: -250px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.weather-main .main-inside #main-city label,
+.weather-main .main-inside #main-coord label {
+  font-size: 1.5em;
+}
+.weather-main .main-inside #main-city input,
+.weather-main .main-inside #main-coord input {
+  padding: 10px;
+  margin: 10px 0;
+}
+.weather-main .main-inside #main-city button,
+.weather-main .main-inside #main-coord button {
+  font-size: 1em;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.weather-main .main-inside #main-city.visibles,
+.weather-main .main-inside #main-coord.visibles {
+  left: 30%;
+}
+
+footer#footer-main {
+  text-align: center;
+  color: white;
+  padding-top: 15px;
+}
+footer#footer-main p {
+  font-size: 1em;
+}/*# sourceMappingURL=style.css.map */
