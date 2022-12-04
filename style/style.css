@@ -33,6 +33,7 @@ header#header-main p {
 }
 .weather-main .main-inside .myBtn {
   padding: 15px;
+  cursor: pointer;
 }
 .weather-main .main-inside #main-city,
 .weather-main .main-inside #main-coord {
@@ -72,4 +73,13 @@ footer#footer-main {
 }
 footer#footer-main p {
   font-size: 1em;
+}
+
+#weatherModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

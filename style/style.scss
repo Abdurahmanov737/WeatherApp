@@ -39,6 +39,7 @@ header#header-main {
         overflow: hidden;
         .myBtn {
             padding: 15px;
+            cursor: pointer;
         }
 
 
@@ -69,6 +70,9 @@ header#header-main {
                 left: 30%;
             }
         }
+
+
+    
     }
 }
 
@@ -81,4 +85,17 @@ footer#footer-main {
         font-size: 1em;
     }
 
+}
+
+#weatherModal{
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    
 }
